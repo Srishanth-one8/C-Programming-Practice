@@ -105,3 +105,165 @@
     }
     return 0 ;
 }*/
+///PROGRAM 8:Check whether a number is an Armstrong number using while.
+/*int main(){
+    int a;
+    printf("ENTER = ");
+    scanf("%d",&a);
+    int digital;
+    int sum = 0;
+    int orginal = a;
+    while(a>0){
+    digital = a%10;
+    sum = sum + (digital * digital * digital);
+    a = a/10;
+    }
+    if ( orginal == sum){
+        printf("Armstrong Number");
+    }
+    else{
+        printf("NOt Armstrong Number");
+    }
+    return 0;
+}*/
+///PROGRAM 9:Use a while loop to find the factorial of a number.
+/*int main(){
+    int a;
+    printf("ENTER = ");
+    scanf("%d",&a);
+    int fact = 1;
+    int i = 1;
+    while(i<=a){
+    fact = fact * i;
+    i++;
+    }
+    printf ("%d",fact);
+    return 0;
+}*/
+///PROGRAM 10:Find the sum of all numbers from 1 to n.
+/*int main(){
+    int a;
+    printf("ENTER = ");
+    scanf("%d",&a);
+    int sum = 0;
+    int i = 1;
+    while(i<=a){
+    sum = sum + i;
+    i++;
+    }
+    printf("%d",sum);
+    return 0 ;
+}*/
+///PROGRAM 11:Using a while loop, print all the even numbers from 1 to n.
+/*int main(){
+    int a;
+    printf("ENTER = ");
+    scanf("%d",&a);
+    int i = 1;
+    while(i<=a){
+        if(i%2==0){
+            printf("%d\n",i);
+        }
+       i++;
+    }
+    return 0 ;
+}*/
+///PROGRAM 12:Count how many even digits are present in a number.
+/*int main(){
+    int a;
+    printf("ENTER = ");
+    scanf("%d",&a);
+    int digital;
+    int count = 0;
+    while(a>0){
+    digital = a%10;
+    if (digital % 2 == 0){
+        count++;
+    }
+    a = a/10;
+    }
+    printf("EVEN DIGITS = %d",count);
+    return 0;
+}*/
+///PROGRAM 13:Count how many odd digits are present in a number.
+/*int main(){
+    int a;
+    printf("ENTER = ");
+    scanf("%d",&a);
+    int digital;
+    int count = 0;
+    while(a>0){
+        digital = a % 10;
+        if (digital % 2 !=0 ){
+            count++;
+        }
+    a = a/10;
+    }
+    printf("ODD DIGITS:%d",count);
+    return 0;
+}*/
+///PROGRAM 14:Find the sum of only the even digits in a number.
+/*int main(){
+    int a;
+    printf("ENTER = ");
+    scanf("%d",&a);
+    int digital;
+    int sum = 0;
+    while(a>0){
+        digital = a % 10;
+        if (digital % 2 == 0){
+        sum = sum + digital;
+        }
+        a = a/10;
+    }
+    printf("SUM OF EVEN DIGIYTS = %d",sum);
+    return 0;
+}*/
+///PROGRAM 15:Find the sum of only the odd digits in a number.
+/*int main(){
+    int a;
+    printf("ENTER = ");
+    scanf("%d",&a);
+    int digital;
+    int sum = 0;
+    while(a>0){
+        digital = a % 10;
+        if (digital % 2 != 0){
+        sum = sum + digital;
+        }
+        a = a/10;
+    }
+    printf("SUM OF ODD DIGIYTS = %d",sum);
+    return 0;
+}*/
+///PROGRAM 16:Count how many times a particular digit appears in a number.
+/*int main(){
+    int a;
+    int b;
+    printf("ENTER NUMBER = ");
+    scanf("%d",&a);
+     printf("ENTER DIGIT = ");
+    scanf("%d",&b);
+    int digital;
+    int count = 0;
+    while(a>0){
+        digital = a % 10;
+        if ( digital == b){
+            count++;
+        }
+        a = a/10;
+    }
+    printf("%d appears %d times",b,count);
+    return 0;
+}*/
+///PROGRAM 17:Find the first digit of a number using while.
+/*int main(){
+    int a;
+    printf("ENTER = ");
+    scanf("%d",&a);
+    while(a>=10){
+        a = a/10;
+    }
+    printf("%d",a);
+    return 0;
+}*/
