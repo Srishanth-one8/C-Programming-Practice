@@ -267,3 +267,77 @@
     printf("%d",a);
     return 0;
 }*/
+//PROGRAM 18:Find the last digit and first digit of a number, then add them.
+/*int main(){
+    int a;
+    printf("ENTER  = ");
+    scanf("%d",&a);
+    int b = a;
+    while(a>0){
+        a = a % 10;
+        break;
+    }
+    while(b>=10){
+        b = b/10;
+    }
+    printf("FIRST = %d\n",b);
+    printf("LAST = %d\n",a);
+    printf("SUM = %d\n",a+b);
+    return 0;
+}*/
+//PROGRAM 19:Find the difference between the first digit and last digit.
+/*int main(){
+    int a;
+    printf("ENTER  = ");
+    scanf("%d",&a);
+    int b = a;
+    while(a>=10){
+        a = a/10;
+    }
+    while(b>0){
+        b = b % 10;
+        break;
+    }
+    printf("FIRST = %d\n",a);
+    printf("LAST = %d\n",b);
+    if (a - b >= 0)
+    printf("+%d", a - b);
+    else
+    printf("%d", a - b);
+    printf("SUM = %d",a-b);
+    return 0;
+}*/
+//PROGRAM 20:Count the number of digits that are greater than 5
+/*int main(){
+    int a;
+    printf("ENTER = ");
+    scanf("%d",&a);
+    int digital;
+    int count = 0;
+    while(a>0){
+    digital = a % 10;
+    if(digital>5){
+        count++;
+    }
+    a = a/10;
+    }
+    printf("COUNT = %d",count);
+    return 0;
+}*/
+//PROGRAM 21:Find the sum of digits greater than 5.
+/*int main(){
+    int a;
+    printf("ENTER = ");
+    scanf("%d",&a);
+    int digital;
+    int count = 0;
+    while(a>0){
+        digital = a % 10;
+        if( digital > 5){
+            count = count + digital;
+        }
+        a = a/10;
+    }
+    printf("SUM = %d",count);
+    return 0;
+}*/
