@@ -327,4 +327,59 @@ return 0 ;
         printf("Special Character ");
     }
     return 0 ;
+}*
+//program 17:A parking lot has a maximum capacity of 50 cars.
+/*int main(){
+    int a;
+    printf("INPUT = ");
+    scanf("%d",&a);
+    if(a == 50){
+        printf("Parking full ");
+    }
+    else if(a <50){
+        printf("Parking available");
+    }
+    else{
+        printf("Invalid");
+    }
 }*/
+//program 18:Imagine you're withdrawing money from an ATM.The ATM has a balance of ₹10,000.
+//Ask the user how much they want to withdraw.
+/*int main(){
+    int s;
+    printf("INPUT = ");
+    scanf("%d",&s);
+    if(s>10000){
+        printf("Insufficient balance");
+    }
+    else if (s == 0 || s<=-1){
+        printf("invalid ammount");
+    }
+    else if(s<=10000){
+        printf("Withdrawal successful");
+    }
+    return 0;
+}*/
+//program 19:Shopping Discount 1) Price less than ₹500 → No discount  2)Price ₹500 to ₹999 → 10% discount 3)Price ₹1000 or more → 20% discount
+/*int main(){
+    int a;
+    printf("Price = ");
+    scanf("%d",&a);
+    int b,c;
+    if( a<500){
+        printf("Discount = No discount\n");
+        printf("Final price = %d\n",a);
+    }
+    else if(a>=500 && a<1000){
+    b = a * 10 / 100;
+    c = a - b;
+    printf("Discount = %d\n",b);
+    printf("Final price = %d\n",c);
+    }
+    else if(a >= 1000){
+    b = a * 20 / 100;
+    c = a - b;
+    printf("Discount = %d\n",b);
+    printf("Final price = %d\n",c);
+    }
+    return 0;
