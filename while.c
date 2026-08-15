@@ -339,5 +339,79 @@
         a = a/10;
     }
     printf("SUM = %d",count);
+    //PROGRAM 22:Find the second largest digit
+/*int main(){
+    int a; 
+    printf("ENTER = ");
+    scanf("%d",&a);
+    int digital;
+    int largest = 0 ;
+    int second = 0;
+    while(a>0){
+         digital = a % 10;
+    if (digital > largest ){
+       second = largest;
+       largest = digital;
+    }
+    else if (digital > second){
+        second = digital;
+    }
+    a = a / 10;
+}
+    printf("LARGEST = %d\n",largest);
+    printf("SECOND = %d\n",second);
     return 0;
 }*/
+//PROGRAM 23:Count how many zeros are in a number
+/*int main(){
+    int a;
+    printf("ENETER = ");
+    scanf("%d",&a);
+    int digital;
+    int found = 0;
+    while(a>0){
+        digital = a % 10;
+        if( digital == 0 ){
+            found = 1;
+        }
+        a = a / 10;
+    }
+    if (found == 1){
+        printf("contains 0");
+    }
+    else{
+        printf("does not contain 0");
+    }
+    return 0;
+}*/
+//PROGRAM 24:Check whether a number is divisible by 3 and 5 at the same time
+/*int main(){
+    int a;
+    printf("ENTER = ");
+    scanf("%d",&a);
+    while(a>0){
+        if(a%3 == 0 && a%5 == 0){
+            printf("DIVISIBLE BY BOTH 3 AND 5");
+            break;
+        }
+        else{
+            printf("NOT DIVISIBLE BY BOTH 3 AND 5");
+            break;
+        }
+    }
+    return 0;
+}*/
+//PROGRAM 25:Every 5 bottles make one complete box.Find how many complete boxes can be made
+/*int main(){
+    int a;
+    printf("INPUT = ");
+    scanf("%d",&a);
+    int count = 0;
+    while(a>=5){
+        count++;
+        a = a - 5;
+    }
+    printf("complete boxes = %d\n",count);
+    printf("Bottel left %d\n",a);
+    return 0;*/
+
