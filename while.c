@@ -414,4 +414,121 @@
     printf("complete boxes = %d\n",count);
     printf("Bottel left %d\n",a);
     return 0;*/
+//PROGRAM 26:Keep asking until the user guesses 7 correctly.   
+/*int main(){
+    int q;
+    printf("ENTER GUESS = ");
+    scanf("%d",&q);
+    while(q>=0 || q<=-1){
+        if (q == 7 ){
+            printf(" CORRECT\n");
+            break;
+        }
+        else{
+            printf("Wrong guess\n");
+            printf("ENTER GUESS = ");
+            scanf("%d",&q);
+           }
+    }
+}*/
+//PROGRAM 27:Keep adding numbers until the user enters 0
+/*int main(){
+    int a;
+    printf("ENTER NUMBER = ");
+    scanf("%d",&a);
+    int sum = 0;
+    while(a != 0){
+    sum = sum + a;
+    printf("ENTER NUMBER = ");
+    scanf("%d",&a);    
+}
+printf("SUM = %d",sum);
+return 0;
+}*/
+//PROGRAM 28:Menu-driven program.Create a program that repeatedly shows:1. Add 2. Subtract 3. Exit
+/*int main(){
+    int a = 0;
+    int b;
+    int c;
+    int sum = 0;
+    int difference = 0;
+    while( a !=3){
+        printf("1: Add\n");
+        printf("2: Subtract\n");
+        printf("3: Exit\n");
+        printf("Enter choice = ");
+        scanf("%d",&a);
+        if (a == 3){
+            printf("Program ended");
+            break;
+        }
+        else if( a == 1) {
+            printf("Enter first number = ");
+            scanf("%d",&b);
+            printf("Enter second number = ");
+            scanf("%d",&c);
+            sum  = b + c;
+            printf("Sum = %d\n",sum);
+        }
+        else if( a == 2){
+            printf("Enter first number = ");
+            scanf("%d",&b);
+            printf("Enter second number = ");
+            scanf("%d",&c);
+            difference  = b - c;
+            printf("Difference = %d\n",difference);
+        }
+        else{
+            printf("Invalid\n");
+        }
+    }
+    return 0;
+}*/
+//Program 29:Write a program that keeps asking the user to enter numbers and adds them together.Stop when the total becomes greater than 100.
+/*int main(){
+    int a ;
+    int sum = 0;
+    while( sum<100){
+        printf("Enter number = ");
+        scanf("%d",&a);
+        sum = sum + a;
+        printf("Total = %d\n",sum);
+    }
+    printf("Total crossed 100");
+    return 0;
+}*/
+//Program 30:Write a program that keeps asking for numbers and stops when the user enters a negative number. At the end, print the sum of only the positive numbers.
+/*int main(){
+    int a;
+    printf("Enter = ");
+    scanf("%d",&a);
+    int sum = 0;
+    while( a>=0 ){
+        sum = sum + a;
+        printf("Enter = ");
+        scanf("%d",&a);
+   }
+   printf("sum = %d\n",sum);
+   return 0;
+}*/
+//Program 31: Average of numbers
+int main() {
+    int a;
+    int b;
+   printf("HOW MANY NUMBERS = ");
+    scanf("%d", &a);
+    int count = 0;
+    int sum = 0;
+    float average;
+    while (count < a) {
+        printf("Enter number = ");
+        scanf("%d", &b);
 
+        sum = sum + b;
+        count++;
+    }
+    average = (float)sum / a;
+    printf("Sum = %d\n", sum);
+    printf("Average = %.2f\n", average);
+    return 0;
+}
