@@ -470,3 +470,229 @@ int main(){
     firstRepeated(word);
     return 0;
 }*/
+//Program 21:Remove all spaces
+/*void removeSpace(char word[]){
+    int found = 0;
+    for (int i = 0; word[i] != '\0'; i++){
+        if ( word[i] == '_'){
+            found = 1;
+        }
+        else{
+            printf("%c",word[i]);
+        }
+    }
+    if (found == 0){
+        printf("\nNo unerscore are found");
+    }
+}
+int main(){
+    char word[50];
+    printf("Input = ");
+    scanf("%s",word);
+    printf("Output = ");
+    removeSpace(word);
+    return 0;
+}*/
+//Program 22:Find the second largest character
+/*void secondlargest(char word[]){
+    char largest = word [0] ;
+    char second = word [0];
+    for( int i = 1; word[i] != '\0'; i++){
+        if( word[i] > largest){
+            second = largest;
+            largest = word[i];
+        }
+        else if (word[i] > second && word[i] < largest) {
+                second = word[i];
+
+        }
+}
+    printf("second character = %c",second);
+
+}
+int main(){
+    char word[20];
+    printf("Input = ");
+    scanf("%s",word);
+    printf("Output : ");
+    secondlargest(word);
+    return 0;
+}*/
+//program 23:Count digits in a string
+/*void countDigits(char word []){
+    int count = 0;
+    for(int i = 0; word[i] != '\0' ; i++){
+        if(word[i] >= '0' && word[i] <= '9'){
+            count++;
+        }
+    }
+    printf("Output : %d",count);
+}
+int main(){
+    char word[20];
+    printf("Input :");
+    scanf("%s",word);
+    countDigits(word);
+    return 0 ;
+}*/
+// Program 24:The function should return the sum of all digits.
+/*int sumCount( int a){
+    int digital;
+    int sum = 0;
+    while(a>0){
+        digital = a % 10;
+        sum = sum + digital;
+        a = a / 10;
+    }
+      return sum;
+}
+int main(){
+    int x;
+    int sol;
+    printf("Enter a number = ");
+    scanf("%d",&x);
+    sol = sumCount(x);
+    printf("Output = %d ",sol);
+    return 0;
+}*/
+// Program 25:Reverse a Number.
+/*int reverseNumber(int a){
+    int digital ;
+    int reverse = 0;
+    while(a>0){
+        digital = a % 10;
+        reverse = (reverse * 10) + digital;
+        a = a / 10;
+    }
+    return reverse;
+}
+int main(){
+    int x;
+    int sol;
+    printf("Enter a number = ");
+    scanf("%d",&x);
+    sol = reverseNumber(x);
+    printf("output = %d",sol);
+    return 0;
+}*/
+// Program 26:Calculate the electricity bill according to these slabs:
+/*int units( int a ){
+    float  sum = 0;
+    if ( a <= 100){
+         sum = a * 2;
+    }
+    else if( a <= 200){
+        sum = (100 * 2) + ((a - 100) * 3);
+    }
+    else if( a<=300){
+        sum = (100 * 2) + (100 * 3) + ((a - 200) * 5);
+    }
+    else {
+        sum = (100 * 2) + (100 * 3) + (100 * 5) + ((a - 300) * 7);
+    }
+    return sum;
+}
+int main(){
+    int x;
+    int sol;
+    printf("Enter your units: ");
+    scanf("%d",&x);
+    sol = units(x);
+    printf("Output:%d",sol);
+    return 0;
+}*/   
+// Program 27:Parking Fee Calculator.
+/*float parkingFee( float a){
+    float value;
+    if( a <= 2){
+        value = (1 * 20) + ((a - 1) * 20 ) ;
+    }
+    else if( a <= 5 ){
+        value =  ( 2 * 20 ) + ( (a  - 2 ) * 15) ; 
+    }
+    else if( a <= 10 ){
+        value =  ( 2 * 20 ) +  ( 3 * 15 ) + ( (a - 5 ) * 10) ; 
+    }
+    else if ( a > 10 ){
+        value =  ( 2 * 20 ) +  ( 3 * 15 ) + ( 5  * 10) + (( a - 10) * 8) ; 
+    }
+    return value;
+}
+int main(){
+    float x;
+    float sol;
+    printf("How many Hours = ");
+    scanf("%f",&x);
+    sol = parkingFee(x);
+    printf("Total fee = %.2f ",sol);
+    return 0 ;
+}*/
+//  Program 28:ATM Withdrawal.
+/*int withdraw(int balance , int amount){
+    int value ;
+    if ( amount <= balance ){
+        value =  balance - amount ;
+    }
+    else {
+        return -1;
+    }
+    return value;
+}
+int main(){
+    int x  = 5000;
+    printf("Balance = %d\n",x);
+    int y;
+    int sol;
+    printf("Withdraw = ");
+    scanf("%d",&y);
+    sol = withdraw(x,y);
+    if ( sol == -1){
+        printf("Insufficient balance");
+    }
+    else{
+        printf("Remaining balance = %d", sol);
+    }
+    return 0;
+}*/
+// Program 29:Student Grade.
+/*char getGrade(int marks){
+    if( marks >= 90 && marks <= 100){
+        return 'A';
+    }
+    else if( marks >= 80 && marks <= 89){
+        return 'B';
+    }
+    else if( marks >= 70 && marks <= 79){
+        return 'C';
+    }
+    else if( marks >= 60 && marks <= 69){
+        return 'D';
+    }
+    else {
+        return 'F';
+    }
+}
+int main(){
+    int x;
+    char word;
+    printf("Input :");
+    scanf("%d",&x);
+    word = getGrade(x);
+    printf("Output: %c",word);
+    return 0;
+}*/
+// Program 30:Temperature Converter.
+/*float convet( float Celsius){
+    float F;
+    F = (Celsius * 1.8 ) + 32;
+    return F;
+}
+int main(){
+    float x;
+    float sol;
+    printf("Input: ");
+    scanf("%f",&x);
+    sol = convet(x);
+    printf("Output: %.1f F ",sol);
+    return 0;
+}*/
