@@ -696,3 +696,107 @@ int main(){
     printf("Output: %.1f F ",sol);
     return 0;
 }*/
+// Program 31:Simple Interest.
+/*float interst(float principal , float rate, float time){
+    float SI;
+    SI = principal * rate* time / 100;
+    return SI;
+}
+int main(){
+    float x;
+    float y;
+    float z;
+    float sol;
+    printf("Principal = ");
+    scanf("%f",&x);
+    printf("Rate = ");
+    scanf("%f",&y);
+    printf("Time = ");
+    scanf("%f",&z);
+    sol = interst(x,y,z);
+    printf("Output = %.1f ",sol);
+    return 0;
+}*/
+// Program 32:Power of a Number.
+/*int power( int Base , int Exponent){
+    int start = 1;
+    for(int i = 1; i <= Exponent;i++){
+        start = start * Base;
+    }
+    return start;
+}
+int main(){
+    int x;
+    int y;
+    int sol;
+    printf("Base = ");
+    scanf("%d",&x);
+    printf("Exponent = ");
+    scanf("%d",&y);
+    sol = power(x,y);
+    printf("Output: %d",sol);
+    return 0 ;
+}*/
+// Program 33:Given a positive integer n, count how many even numbers are from 1 to n, and return the count.
+/*int even(int even){
+    int count = 0;
+    for(int i = 1; i <= even; i++){
+        if( i % 2 == 0){
+            printf("Even = %d\n",i);
+            count++;
+        }
+    }
+    return count;
+}
+int main(){
+    int x;
+    int sol;
+    printf("n = ");
+    scanf("%d",&x);
+    sol = even(x);
+    printf("n = %d\n",sol);
+    return 0;
+}*/
+// Program 34:Count Multiples.
+/*int count(int n , int divisor){
+    int count = 0;
+    for (int i = 1 ; i <= n ; i++ ){
+        if (  i % divisor == 0 ){
+            printf("%d\n",i);
+            count++;
+        }
+    }
+    return count;
+}
+int main(){
+    int x;
+    int y;
+    int sol;
+    printf("N = ");
+    scanf("%d",&x);
+    printf("Divisor = ");
+    scanf("%d",&y);
+    printf("Output:\n");
+    sol = count(x,y);
+    printf("Count = %d",sol);
+    return 0;
+}*/
+// Program 35:Return the sum of all even numbers from 1 to n.
+/*int sumEven(int n){
+    int sum = 0;
+    for(int i = 0; i <= n ; i++){
+        if ( i % 2 == 0){
+            sum = sum + i ;
+        }
+    }
+    return sum;
+}
+int main(){
+    int x;
+    int sol;
+    printf("n = ");
+    scanf("%d",&x);
+    sol = sumEven(x);
+    printf("Even numbers sum : %d",sol);
+    return 0;
+}*/
