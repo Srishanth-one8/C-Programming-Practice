@@ -800,3 +800,129 @@ int main(){
     printf("Even numbers sum : %d",sol);
     return 0;
 }*/
+// Program 36:Find the product of all odd numbers from 1 to n.
+/*int product(int odd){
+    int value = 1;
+    for( int i = 1; i <= odd; i++){
+        if ( i % 2 != 0){
+            value = value * i;
+        }
+    }
+    return value;
+}
+int main(){
+    int x;
+    int sol;
+    printf("N = ");
+    scanf("%d",&x);
+    sol = product(x);
+    printf("Output: %d",sol);
+    return 0;
+}*/
+// Program 37:Count how many digits in a positive number are greater than 5.
+/*int count(int a){
+    int digital;
+    int count = 0;
+    while(a>0){
+        digital = a % 10;
+        if ( digital > 5){
+            printf("%d\n",digital);
+            count++;
+        }
+        a = a/ 10;
+    }
+    if (count == 0){
+        printf("No greater than '5' \n");
+    }
+    return count;
+}
+int main(){
+    int x;
+    int sol;
+    printf("N = ");
+    scanf("%d",&x);
+    printf("Output: \n");
+    sol = count(x);
+    printf("Count : %d\n",sol);
+    return 0;
+}*/
+// Program 38:Imagine a sensor gives an integer value from 0 to 1023 (like a basic ADC).
+/*int sensorStatus(int value){
+    if( value <= 1023 && value >= 701){
+        return 2;
+    }
+    else if (value <= 700 && value >= 301){
+        return 1;
+    }
+    else if (value <= 300 && value >= 0){
+        return 0;
+    }
+    else{
+        return -1;
+    }
+}
+int main(){
+    int x;
+    int sol;
+    printf("Sensor Value = ");
+    scanf("%d",&x);
+    printf("Output: ");
+    sol = sensorStatus(x);
+    if ( sol == 2){
+        printf("HIGH");
+    }
+    else if( sol == 1){
+        printf("MEDIUM");
+    }
+    else if(sol == 0){
+        printf("LOW");
+    }
+    else if (sol == -1){
+        printf("Invalid sensor value");
+    }
+    return 0;
+}*/
+// Program 39:Button Debounce Logic.
+/*char pressCount(char word[]){
+    int press = 0;
+    for (int i = 1; word [i] != '\0'; i++){
+            if (word[i] == '1' &&  word[i - 1] == '0'){
+                press++;
+            }
+    }
+    return press;
+}
+int main(){
+    char word[10];
+    int sol;
+    printf("Enter reading: ");
+    scanf("%s",word);
+    sol = pressCount(word);
+    printf("Press = %d",sol);
+    return 0;
+}*/
+// Program 40: A sensor normally gives values from 0–100. Any reading above 80 is considered a fault.
+/*int countFaults(int readings[], int n) {
+    int count = 0;
+    for (int i = 0; i < n; i++) {
+        if (readings[i] > 80) {
+            printf("Fault: %d\n", readings[i]);
+            count++;
+        }
+    }
+    return count;
+}
+int main() {
+    int readings[10];
+    int n;
+    int sol;
+    printf("How many readings? ");
+    scanf("%d", &n);
+    printf("Enter readings:\n");
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &readings[i]);
+    }
+    sol = countFaults(readings, n);
+    printf("Total faults = %d", sol);
+    return 0;
+}*/
