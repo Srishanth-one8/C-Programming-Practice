@@ -926,3 +926,246 @@ int main() {
     printf("Total faults = %d", sol);
     return 0;
 }*/
+// Program 41:Prime number
+/*int Prime( int prime ){
+    int count = 0;
+    for ( int i = 1; i <= prime; i++){
+        if ( prime % i == 0){
+            count++;
+        }
+    }
+    if ( count == 2){
+        return 1;
+    }
+    else {
+        return 0;
+    }
+}
+int main(){
+    int x;
+    int sol;
+    printf("Enter a number : ");
+    scanf("%d",&x);
+    sol = Prime(x);
+    if ( sol == 1){
+        printf( "'%d' is a prime number",x);
+    }
+    else{
+        printf(" %d is not a prime number",x);
+    }
+    return 0;
+}*/
+// Program 42:Button Event Detector.
+/*int Presscount(int Press[] , int n){
+    int count = 0;
+    int largest = 0;
+    for(int i = 0; i < n ; i++){
+        if ( Press[i] == 0){
+            count = 0;
+        }
+        else if( Press[i] == 1 ){
+            count++;
+        }
+        if ( count > largest ){
+            largest = count;
+        }
+    }
+    return largest;
+}
+int main(){
+    int read[20];
+    int n = 8 ;
+    int sol;
+    printf("Enter Button reading:\n");
+    for ( int i = 0; i < n; i++){
+        scanf("%d",&read[i]);
+    }
+    sol = Presscount(read,n);
+    printf("%d longest",sol);
+    return 0;
+}*/
+// Program 43:Bit Manipulation.
+/*int checkBit(int value, int position) {
+    int mask = 1 << position;                       // << lift-shift operator
+    if (value & mask) {
+        return 1;
+    }
+    else {
+        return 0;
+   }
+}
+int main() {
+    int value;
+    int position;
+    int sol;
+    printf("Enter register value: ");
+    scanf("%d", &value);
+    printf("Enter bit position (0-7): ");
+    scanf("%d", &position);
+    sol = checkBit(value, position);
+    if (sol == 1) {
+        printf("Bit %d is ON", position);
+    }
+    else {
+        printf("Bit %d is OFF", position);
+    }
+    return 0;
+}*/
+// Program 44: Q1 — Check a bit.
+/*int CheckBit( int a ,  int b){
+    int mask = 1 << b;
+    if ( a & mask){
+        return 1;
+    }
+    else{
+        return 0;
+    }
+}
+int main(){
+    int value = 12;
+    int position;
+    int sol;
+    printf("Register value: %d\n",value);
+    printf("Enter bit position( 0-7): ");
+    scanf("%d",&position);
+    sol =  CheckBit(value,position);
+    if( sol == 1){
+        printf("Position %d is ON ",position);
+    }
+    else if( sol == 0){
+        printf("Position %d is OFF ",position);
+    }
+    return 0;
+}*/
+// Program 45:Q3 — Turn ON a bit.
+/*int CheckBit( int a ,  int b){
+    int digital;
+    int mask = 1 << b;
+    digital = a | mask;
+    return  digital;
+}
+int main(){
+    int value = 8;
+    int position;
+    int sol;
+    printf("Register value: %d\n",value);
+    printf("Enter bit position( 0-7): ");
+    scanf("%d",&position);
+    sol =  CheckBit(value,position);
+    printf("New value %d",sol);
+    return 0;
+}*/
+// Program 46:Q4 — Turn OFF a bit.
+/*int CheckBit( int a ,  int b){
+    int digital;
+    int mask = 1 << b;
+    digital = a & ~mask;
+    return digital;
+}
+int main(){
+    int value = 15;
+    int position;
+    int sol;
+    printf("Register value: %d\n",value);
+    printf("Enter bit position( 0-7): ");
+    scanf("%d",&position);
+    sol =  CheckBit(value,position);
+    printf("New value = %d",sol);
+    return 0;
+}*/
+// Program 47:Q5 — Toggle a bit.
+/*int CheckBit( int a ,  int b){
+    int digital;
+    int mask = 1 << b;
+    digital = a ^ mask;
+    return digital;
+}
+int main(){
+    int value = 10;
+    int position;
+    int sol;
+    printf("Register value: %d\n",value);
+    printf("Enter bit position( 0-7): ");
+    scanf("%d",&position);
+    sol =  CheckBit(value,position);
+    printf("New value = %d",sol);
+    return 0;
+}*/
+// Program 48:Q6 — Real Embedded-style problem.
+/*int check(int binary[] , int position){
+    int index = 7 - position;
+    if (binary[index] == 1 ){
+        return 1;
+    }
+    else{
+        return 0;
+    }
+}
+int main(){
+    int read[20];
+    int n = 8 ;
+    int Position;
+    int sol;
+    printf("A GPIO register contains(0-7):\n");
+    for ( int i = 0; i < n; i++){
+        scanf("%d",&read[i]);
+    }
+    printf("Enter position: ");
+    scanf("%d",&Position);
+    sol = check(read,Position);
+    if( sol == 1){
+        printf("Bit %d is ON",Position);
+    }
+    else if (sol == 0){
+        printf("Bit %d is Off",Position);
+    }
+    return 0;
+}*/
+// Program 49:: Bit shifting.
+/*int check(int binary,int Shift){
+    int store;
+    store = binary << Shift;              // >> right shift
+    return store;
+}
+int main(){
+    int read;
+    int Shift;
+    int sol;
+    printf("Value: ");
+    scanf("%d",&read);
+    printf("Left shift: ");
+    scanf("%d",&Shift);
+    sol = check(read,Shift);
+    for (int i = 7; i >= 0; i--){
+    printf("%d", (sol >> i) & 1);
+}
+    return 0;
+}*/
+//Program 50:You want to turn bit 5 ON.
+/*void Check(int binary[],int shift){
+    int index = 7 - shift;
+    if (binary[index] == 0){
+        binary[index] = 1;
+    }
+    else{
+        binary[index] = 0;
+    }
+}
+int main(){
+    int read[9];
+    int n = 8;
+    int shift;
+    int sol;
+    printf("8 - bit GPIO register:\n");
+    for( int i = 0 ; i < 8; i++){
+        scanf("%d",&read[i]);
+    }
+    printf("To shift: ");
+    scanf("%d",&shift);
+    Check(read,shift);
+    for (int i = 0; i < 8; i++)
+    {
+        printf("%d", read[i]);
+    }
+    return 0;
+}*/
